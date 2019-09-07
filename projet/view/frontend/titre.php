@@ -1,0 +1,1 @@
+  <?php echo"<h2>Billet simple pour l'Alaska</h2>" ?>

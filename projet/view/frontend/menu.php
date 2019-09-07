@@ -1,0 +1,1 @@
+  <?php echo"<h1>Jean ForteRoche</h1> <div><a href='index.php'>Chapitre</a>  <a href='connexion.php'>Connexion</a></div>"?>
