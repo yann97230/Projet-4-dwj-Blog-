@@ -1,6 +1,19 @@
 <?php $title = 'Blog Jean Forteroche'; ?>
 
-<?php $content = ob_start(); ?>
+<?php ob_start(); ?>
+    </head>
+        <header>
+            <div class="titre">
+                <?php include "titre.php" ?>
+            </div>
+        </header>
+    <body>
+        
+
+
+        
+        <h2>Derniers billets du blog :</h2>
+        <div id="addArticle"><button class="btn btn-info"><a href="index.php?action=formArticle">Ajouter un article</a></button></div>
  
 <?php
 while ($data = $posts->fetch())
@@ -20,7 +33,7 @@ while ($data = $posts->fetch())
                 echo nl2br(htmlspecialchars($data['contenu']));
                 ?>
                 <br />
-                <em><button class="btn btn-info"><a class="button-return" href="index.php?action=post&amp;id=<?= $data['id'] ?>">Ajouter un commentaires</a></button></em>
+                <em><button class="btn btn-info"><a class="button-return" href="index.php?action=post&amp;id=<?= $data['id'] ?>">Commentaires</a></button></em>
                 </p>
             </article>     
         </div>
